@@ -1,0 +1,18 @@
+{
+  "name": "chrome-extension-company-kintai",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Companyの勤怠入力を補助する拡張機能です。",
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.company.works-hi.com/self-workflow/cws/cws"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
